@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Café Aroma | Contacto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="oi oi-cup"></span> Café Aroma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+        </nav>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="form-container">
+                    <h2 class="mb-1"><span class="oi oi-envelope-closed"></span> Contáctanos</h2>
+                    <p class="text-muted mb-4">Déjanos un comentario o suscríbete para recibir ofertas.</p>
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivo">Motivo de contacto</label>
+                            <select class="form-control" id="motivo">
+                                <option selected disabled value="">Selecciona una opción...</option>
+                                <option>Dejar un comentario</option>
+                                <option>Consulta sobre un producto</option>
+                                <option>Suscripción mensual de café</option>
+                                <option>Pedido al por mayor</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4"
+                                placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="suscripcion">
+                                <label class="form-check-label" for="suscripcion">
+                                    Quiero recibir ofertas y novedades por correo
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark btn-block btn-lg">
+                            <span class="oi oi-paper-plane"></span> Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">&copy; 2026 Café Aroma · Todos los derechos reservados</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
